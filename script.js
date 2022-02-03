@@ -19,13 +19,11 @@ function compute()
 	document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>"
 }
 
-function checkdata()
-{
-	//check principal is empty
+function checkdata(){
+	//check principal is negative number
 	
-	if(principal.value==""){
+	if(principal.value<=0){
 		alert("Please enter a positive number");
 		principal.focus();
-		return false;
-}
-        
+		return false;}
+}      
