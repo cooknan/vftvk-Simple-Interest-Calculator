@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Simple Interest Calculator</title>
+    <title> Simple Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
@@ -9,14 +9,13 @@
         <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
 
-		Amount <input type="number" id="principal"<br>
+		Amount <input type="number" id="principal">
+		<br/><br/>
 		Interest Rate  <input type="range" id="rate" min="1" max="20" step="0.25" value="10.25" onchange="updateRate()">   
-			
 		<span id="rate_val">
         10.25%
         </span>
-		<br>
-		<br>
+		<br/><br/>
         No. of Years <select id="years">  
         <option value="1">1</option>
         <option value="2">2</option>
@@ -30,9 +29,9 @@
         <option value="10">10</option>
         </select>
         <br/><br/>
-		<button onclick=return"checkdata()">Check data</button>
+		<button onclick="checkdata()">Compute Interest</button>
      
-	 <span id="result">
+		<span id="result">
             
         </span>
 		
@@ -40,8 +39,7 @@
         <footer>
             &#169; This Calculator belongs to Nan Cook
         </footer>
-     </div>
-     
-    </body>
+		</div>
+		</body>
     
 </html>

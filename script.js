@@ -7,8 +7,8 @@ var years = document.getElementById("years").value;
 var interest = principal * years * rate /100;
 var year = new Date().getFullYear()+parseInt(years);
 
-function updateRate(){
 //give a value to right of slider as rate is updated
+function updateRate(){
     var rateval = document.getElementById("rate").value; 
 	document.getElementById("rate_val").innerText=rateval;
 }
@@ -17,12 +17,14 @@ function updateRate(){
 //If so stop and refocus to principal field
 
 function checkdata(){
-	if(principal <=0){
+	if(principal <= 0){
 		alert("Enter a positive number");
 		principal.focus();
 		return false;
-		//else all is well returen true
-		return true:
+		//else all is well return true
+		else{
+		return true;
+}
 }
 }
 
