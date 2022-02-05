@@ -15,7 +15,7 @@ function updateRate()
 }
 
 
-//Check if principal field has a 0 or negative number 
+/*Check if principal field has a 0 or negative number 
 //If so stop and refocus to principal field
 /*
 function checkdata()
